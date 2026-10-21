@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad</title>
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .policy-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .policy-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-top: 6rem;
+        }
+
+        .policy-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .policy-section h2 {
+            color: var(--primary-pink);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .policy-section h3 {
+            color: var(--gray-700);
+            margin: 1.5rem 0 0.5rem 0;
+            font-size: 1.2rem;
+        }
+
+        .policy-section ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .policy-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--gradient-pink);
+            color: white;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .privacy-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .floating-icon {
+            position: absolute;
+            font-size: 2rem;
+            color: rgba(59, 130, 246, 0.1);
+            animation: floatPrivacy 20s infinite linear;
+            pointer-events: none;
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+        }
+
+        .floating-icon:nth-child(1) {
+            top: 15%;
+            left: 8%;
+            animation-delay: 0s;
+            font-size: 1.8rem;
+            color: rgba(59, 130, 246, 0.08);
+        }
+
+        .floating-icon:nth-child(2) {
+            top: 25%;
+            right: 12%;
+            animation-delay: 3s;
+            font-size: 2.3rem;
+            color: rgba(16, 185, 129, 0.12);
+        }
+
+        .floating-icon:nth-child(3) {
+            bottom: 20%;
+            left: 12%;
+            animation-delay: 6s;
+            font-size: 2rem;
+            color: rgba(139, 92, 246, 0.09);
+        }
+
+        .floating-icon:nth-child(4) {
+            top: 45%;
+            right: 18%;
+            animation-delay: 9s;
+            font-size: 2.6rem;
+            color: rgba(59, 130, 246, 0.15);
+        }
+
+        .floating-icon:nth-child(5) {
+            bottom: 30%;
+            right: 8%;
+            animation-delay: 12s;
+            font-size: 1.7rem;
+            color: rgba(16, 185, 129, 0.11);
+        }
+
+        .floating-icon:nth-child(6) {
+            top: 65%;
+            left: 10%;
+            animation-delay: 15s;
+            font-size: 2.1rem;
+            color: rgba(139, 92, 246, 0.13);
+        }
+
+        /* Iconos de seguridad */
+        .floating-icon:nth-child(1)::before {
+            content: '\f023';
+        }
+
+        /* Candado */
+        .floating-icon:nth-child(2)::before {
+            content: '\f3ed';
+        }
+
+        /* Escudo */
+        .floating-icon:nth-child(3)::before {
+            content: '\f084';
+        }
+
+        /* Llave */
+        .floating-icon:nth-child(4)::before {
+            content: '\f2f1';
+        }
+
+        /* User Shield */
+        .floating-icon:nth-child(5)::before {
+            content: '\f21b';
+        }
+
+        /* Privacy */
+        .floating-icon:nth-child(6)::before {
+            content: '\f3c1';
+        }
+
+        /* Fingerprint */
+
+        @keyframes floatPrivacy {
+            0% {
+                transform: translateY(0px) rotate(0deg) scale(1);
+            }
+
+            25% {
+                transform: translateY(-15px) rotate(45deg) scale(1.1);
+            }
+
+            50% {
+                transform: translateY(0px) rotate(90deg) scale(1);
+            }
+
+            75% {
+                transform: translateY(15px) rotate(135deg) scale(0.9);
+            }
+
+            100% {
+                transform: translateY(0px) rotate(180deg) scale(1);
+            }
+        }
+
+        .policy-content {
+            position: relative;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(2px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="privacy-background">
+        <div class="floating-icon"></div>
+        <div class="floating-icon"></div>
+        <div class="floating-icon"></div>
+        <div class="floating-icon"></div>
+        <div class="floating-icon"></div>
+        <div class="floating-icon"></div>
+    </div>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="Mi Pequeño Ángel - El Molinillo, ir al inicio">
+                <span class="logo-img">
+                    <img src="img/logo.jpg" alt="Logo Escuela Infantil Mi Pequeño Ángel - El Molinillo">
+                </span>
+                <div class="logo-text">
+                    <h1>Mi Pequeño Ángel</h1>
+                    <p>El Molinillo</p>
+                </div>
+            </a>
+
+            <!-- Menú de navegación -->
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="index.html#welcome" class="nav-link">Bienvenida</a>
+                <a href="index.html#about" class="nav-link">Sobre Nosotros</a>
+                <a href="index.html#facilities" class="nav-link">Instalaciones</a>
+                <a href="index.html#admissions" class="nav-link">Admisiones</a>
+                <a href="index.html#news" class="nav-link">Eventos</a>
+                <a href="index.html#contact" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido de Política de Privacidad -->
+    <main class="policy-content">
+        <div class="policy-header">
+            <h1>Política de Privacidad</h1>
+            <p>Última actualización: 15 de Enero, 2024</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>1. Información General</h2>
+            <p>En la Escuela Infantil Mi Pequeño Ángel - El Molinillo, nos comprometemos a proteger y respetar su
+                privacidad. Esta política explica cómo recopilamos, usamos y protegemos su información personal.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>2. Información que Recopilamos</h2>
+            <h3>2.1. Información Personal</h3>
+            <p>Podemos recopilar y procesar la siguiente información:</p>
+            <ul>
+                <li>Datos de contacto (nombre, dirección, email, teléfono)</li>
+                <li>Información del niño/a (nombre, fecha de nacimiento, necesidades especiales)</li>
+                <li>Información médica relevante para el cuidado del niño/a</li>
+                <li>Datos de facturación y pagos</li>
+            </ul>
+
+            <h3>2.2. Información Automática</h3>
+            <p>Cuando visita nuestro sitio web, recopilamos automáticamente:</p>
+            <ul>
+                <li>Dirección IP y tipo de navegador</li>
+                <li>Páginas visitadas y tiempo de permanencia</li>
+                <li>Información del dispositivo utilizado</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>3. Uso de la Información</h2>
+            <p>Utilizamos su información para:</p>
+            <ul>
+                <li>Gestionar las matriculaciones y admisiones</li>
+                <li>Proporcionar servicios educativos y de cuidado</li>
+                <li>Comunicarnos con los padres/tutores</li>
+                <li>Cumplir con obligaciones legales</li>
+                <li>Mejorar nuestros servicios</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>4. Base Legal para el Tratamiento</h2>
+            <p>El tratamiento de sus datos se basa en:</p>
+            <ul>
+                <li>Ejecución del contrato de servicios educativos</li>
+                <li>Consentimiento explícito para tratamientos específicos</li>
+                <li>Obligaciones legales en materia educativa y sanitaria</li>
+                <li>Interés legítimo para mejorar nuestros servicios</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>5. Compartición de Datos</h2>
+            <p>No compartimos su información personal con terceros, excepto:</p>
+            <ul>
+                <li>Cuando sea requerido por ley</li>
+                <li>Con autoridades sanitarias en caso de emergencia</li>
+                <li>Con proveedores de servicios esenciales (siempre con garantías de confidencialidad)</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>6. Conservación de Datos</h2>
+            <p>Conservaremos sus datos personales durante:</p>
+            <ul>
+                <li>Datos de alumnos: Hasta 5 años después de finalizar los servicios</li>
+                <li>Datos fiscales: Hasta 6 años según obligación legal</li>
+                <li>Datos médicos: Según legislación sanitaria aplicable</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>7. Sus Derechos</h2>
+            <p>Usted tiene derecho a:</p>
+            <ul>
+                <li>Acceder a sus datos personales</li>
+                <li>Rectificar datos inexactos</li>
+                <li>Suprimir sus datos en ciertas circunstancias</li>
+                <li>Oponerse al tratamiento de sus datos</li>
+                <li>Portabilidad de datos</li>
+                <li>Retirar el consentimiento en cualquier momento</li>
+            </ul>
+            <p>Para ejercer estos derechos, contacte con: consultas@centroinfantilmpaelmolinillo.es</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>8. Seguridad</h2>
+            <p>Implementamos medidas de seguridad técnicas y organizativas apropiadas para proteger sus datos personales
+                contra accesos no autorizados, pérdida o destrucción.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>9. Contacto</h2>
+            <p>Si tiene alguna pregunta sobre esta política de privacidad, puede contactarnos:</p>
+            <ul>
+                <li>Email: contacto@escuelainfantilmpaelmolinillo.es</li>
+                <li>Teléfono: +34 959 240 545</li>
+                <li>Dirección: Calle Santiago Apóstol Nº22, 21002, Huelva</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>10. Cambios en la Política</h2>
+            <p>Podemos actualizar esta política periódicamente. Le notificaremos cualquier cambio significativo
+                publicando la nueva política en nuestro sitio web.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <img src="img/favicon.ico" alt="Logo Escuela Infantil Mi Pequeño Ángel"
+                                style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <div>
+                            <h3>Mi Pequeño Ángel</h3>
+                            <p>El Molinillo</p>
+                        </div>
+                    </div>
+                    <p class="footer-text">Escuela infantil comprometida con la educación de calidad, la seguridad y el
+                        bienestar de los más pequeños en Huelva.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/p/Mi-Peque%C3%B1o-%C3%81ngel-El-Molinillo-100089891724170/"
+                            class="social-link" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Calle Santiago Apóstol Nº22</p>
+                        <p>21002, Huelva</p>
+                        <p><i class="fas fa-phone"></i> +34 959 240 545</p>
+                        <p><i class="fas fa-phone"></i> +34 646 665 401</p>
+                        <p><i class="fas fa-envelope"></i> contacto@escuelainfantilmpaelmolinillo.es</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Horario</h4>
+                    <div class="footer-hours">
+                        <p>Lunes a Viernes de 7:30h - 17:00h</p>
+                        <p>Sábados, Domingos y Festivos: Cerrado</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Políticas en el pie de página -->
+            <div class="footer-policies">
+                <a href="politica-privacidad.html">Política de Privacidad</a> |
+                <a href="politica-cookies.html">Política de Cookies</a> |
+                <a href="terminos-condiciones.html">Términos y Condiciones</a> |
+                <a href="aviso-legal.html">Aviso Legal</a>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 Mi Pequeño Ángel - El Molinillo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Banner de Cookies -->
+    <div id="cookieBanner" class="cookie-banner-full">
+        <div class="container">
+            <div class="cookie-content-full">
+                <div class="cookie-text-full">
+                    <h3><i class="fas fa-cookie-bite"></i> Usamos cookies para mejorar tu experiencia</h3>
+                    <p>En nuestra escuela infantil utilizamos cookies propias y de terceros para analizar el tráfico
+                        web, personalizar contenidos y ofrecerte una mejor experiencia. Puedes aceptar todas las cookies
+                        o configurar tus preferencias.</p>
+                </div>
+                <div class="cookie-buttons-full">
+                    <button id="acceptAllCookies" class="btn-cookie btn-cookie-primary">
+                        Aceptar Todas
+                    </button>
+                    <button id="configureCookies" class="btn-cookie btn-cookie-secondary">
+                        Configurar
+                    </button>
+                    <button id="rejectCookies" class="btn-cookie btn-cookie-outline">
+                        Rechazar No Esenciales
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Configuración de Cookies -->
+    <div id="cookieModal" class="cookie-modal">
+        <div class="cookie-modal-content">
+            <div class="cookie-modal-header">
+                <h3><i class="fas fa-sliders-h"></i> Configuración de Cookies</h3>
+                <button id="closeCookieModal" class="cookie-close">&times;</button>
+            </div>
+            <div class="cookie-modal-body">
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <label class="cookie-toggle">
+                            <input type="checkbox" id="essentialCookies" checked disabled>
+                            <span class="cookie-slider"></span>
+                        </label>
+                        <div class="cookie-category-info">
+                            <h4>Cookies Esenciales</h4>
+                            <p>Necesarias para el funcionamiento básico del sitio. No se pueden desactivar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <label class="cookie-toggle">
+                            <input type="checkbox" id="performanceCookies">
+                            <span class="cookie-slider"></span>
+                        </label>
+                        <div class="cookie-category-info">
+                            <h4>Cookies de Rendimiento</h4>
+                            <p>Nos ayudan a entender cómo interactúas con el sitio y mejorar nuestros servicios.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <label class="cookie-toggle">
+                            <input type="checkbox" id="functionalityCookies">
+                            <span class="cookie-slider"></span>
+                        </label>
+                        <div class="cookie-category-info">
+                            <h4>Cookies de Funcionalidad</h4>
+                            <p>Permiten recordar tus preferencias y personalizar tu experiencia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <label class="cookie-toggle">
+                            <input type="checkbox" id="marketingCookies">
+                            <span class="cookie-slider"></span>
+                        </label>
+                        <div class="cookie-category-info">
+                            <h4>Cookies de Marketing</h4>
+                            <p>Utilizadas para mostrarte contenido y anuncios relevantes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cookie-modal-footer">
+                <button id="saveCookiePreferences" class="btn-cookie btn-cookie-primary">
+                    Guardar Preferencias
+                </button>
+                <button id="acceptAllInModal" class="btn-cookie btn-cookie-secondary">
+                    Aceptar Todas
+                </button>
+                <button id="rejectAllInModal" class="btn-cookie btn-cookie-outline">
+                    Rechazar Todas
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

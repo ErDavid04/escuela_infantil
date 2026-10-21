@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" role="img" aria-label="Ilustración: niños con molinillos jugando junto a la escuela bajo un arcoíris">
+  <defs>
+    <g id="molinillo">
+      <line x1="0" y1="0" x2="0" y2="70" stroke="#26354F" stroke-width="4" stroke-linecap="round"/>
+      <path d="M0 0 L0 -26 L19 -19 Z" fill="#E63E6D"/>
+      <path d="M0 0 L26 0 L19 19 Z" fill="#FFC93C"/>
+      <path d="M0 0 L0 26 L-19 19 Z" fill="#2BA8E0"/>
+      <path d="M0 0 L-26 0 L-19 -19 Z" fill="#22A886"/>
+      <circle r="4" fill="#fff"/>
+    </g>
+    <g id="nino">
+      <path d="M-11 -128 L11 -128 L12 -114 L56 -110 L56 -94 L13 -96 L13 -60 L42 0 L22 0 L0 -40 L-22 0 L-42 0 L-13 -60 L-13 -96 L-56 -94 L-56 -110 L-12 -114 Z"/>
+      <circle cy="-150" r="24"/>
+      <circle cx="-8" cy="-153" r="3" fill="#26354F"/>
+      <circle cx="8" cy="-153" r="3" fill="#26354F"/>
+      <path d="M-8 -142 Q0 -134 8 -142" stroke="#26354F" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <circle cx="-15" cy="-144" r="4" fill="#FF8FB1" opacity=".7"/>
+      <circle cx="15" cy="-144" r="4" fill="#FF8FB1" opacity=".7"/>
+    </g>
+  </defs>
+
+  <!-- Fondo -->
+  <circle cx="300" cy="270" r="245" fill="#FFF3C4"/>
+  <circle cx="300" cy="270" r="245" fill="none" stroke="#FFE08A" stroke-width="6" stroke-dasharray="2 16" stroke-linecap="round"/>
+
+  <!-- Arcoíris -->
+  <g fill="none" stroke-width="22" stroke-linecap="round">
+    <path d="M85 340 A215 215 0 0 1 515 340" stroke="#E63E6D"/>
+    <path d="M107 340 A193 193 0 0 1 493 340" stroke="#FF8A3D"/>
+    <path d="M129 340 A171 171 0 0 1 471 340" stroke="#FFC93C"/>
+    <path d="M151 340 A149 149 0 0 1 449 340" stroke="#22A886"/>
+    <path d="M173 340 A127 127 0 0 1 427 340" stroke="#2BA8E0"/>
+    <path d="M195 340 A105 105 0 0 1 405 340" stroke="#8E5CF7"/>
+  </g>
+
+  <!-- Sol -->
+  <g transform="translate(510 92)">
+    <g stroke="#FFB300" stroke-width="6" stroke-linecap="round">
+      <line x1="0" y1="-58" x2="0" y2="-44"/><line x1="0" y1="44" x2="0" y2="58"/>
+      <line x1="-58" y1="0" x2="-44" y2="0"/><line x1="44" y1="0" x2="58" y2="0"/>
+      <line x1="-41" y1="-41" x2="-31" y2="-31"/><line x1="31" y1="31" x2="41" y2="41"/>
+      <line x1="-41" y1="41" x2="-31" y2="31"/><line x1="31" y1="-31" x2="41" y2="-41"/>
+    </g>
+    <circle r="36" fill="#FFC93C"/>
+    <circle cx="-11" cy="-5" r="3.5" fill="#26354F"/><circle cx="11" cy="-5" r="3.5" fill="#26354F"/>
+    <path d="M-12 8 Q0 20 12 8" stroke="#26354F" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Nubes -->
+  <g fill="#fff">
+    <g transform="translate(150 125)"><ellipse cx="0" cy="10" rx="48" ry="20"/><circle cx="-16" cy="0" r="22"/><circle cx="14" cy="-6" r="26"/></g>
+    <g transform="translate(395 70) scale(.75)"><ellipse cx="0" cy="10" rx="48" ry="20"/><circle cx="-16" cy="0" r="22"/><circle cx="14" cy="-6" r="26"/></g>
+  </g>
+
+  <!-- Globos -->
+  <g>
+    <path d="M78 205 Q86 250 72 300" stroke="#26354F" stroke-width="2" fill="none"/>
+    <ellipse cx="78" cy="185" rx="22" ry="27" fill="#E63E6D"/>
+    <ellipse cx="71" cy="176" rx="5" ry="8" fill="#fff" opacity=".5"/>
+    <path d="M108 225 Q100 265 106 300" stroke="#26354F" stroke-width="2" fill="none"/>
+    <ellipse cx="108" cy="205" rx="20" ry="25" fill="#2BA8E0"/>
+    <ellipse cx="102" cy="197" rx="4" ry="7" fill="#fff" opacity=".5"/>
+  </g>
+
+  <!-- Colinas -->
+  <path d="M0 420 Q120 360 260 410 T600 395 V520 H0 Z" fill="#8FDB6A"/>
+  <path d="M0 455 Q160 415 320 450 T600 440 V520 H0 Z" fill="#5CC46B"/>
+
+  <!-- Escuela -->
+  <g>
+    <rect x="235" y="300" width="130" height="125" rx="8" fill="#fff"/>
+    <path d="M220 308 L300 238 L380 308 Z" fill="#E63E6D" stroke="#E63E6D" stroke-width="8" stroke-linejoin="round"/>
+    <circle cx="300" cy="282" r="13" fill="#FFC93C"/>
+    <rect x="250" y="318" width="28" height="28" rx="5" fill="#2BA8E0"/>
+    <rect x="322" y="318" width="28" height="28" rx="5" fill="#2BA8E0"/>
+    <line x1="264" y1="318" x2="264" y2="346" stroke="#fff" stroke-width="3"/>
+    <line x1="336" y1="318" x2="336" y2="346" stroke="#fff" stroke-width="3"/>
+    <path d="M282 425 V375 A18 18 0 0 1 318 375 V425 Z" fill="#FF8A3D"/>
+    <circle cx="310" cy="400" r="3" fill="#fff"/>
+    <path d="M300 368 c-4 -6 -12 -2 -8 4 l8 7 l8 -7 c4 -6 -4 -10 -8 -4z" fill="#fff"/>
+  </g>
+
+  <!-- Niños con molinillos -->
+  <g transform="translate(140 470)" fill="#22A886">
+    <use href="#nino"/>
+    <use href="#molinillo" transform="translate(-60 -192) scale(1.35)"/>
+  </g>
+  <g transform="translate(462 470)" fill="#FFB300">
+    <use href="#nino"/>
+    <use href="#molinillo" transform="translate(60 -192) scale(1.35)"/>
+  </g>
+
+  <!-- Bloques ABC -->
+  <g font-family="'Arial Black', 'Segoe UI', sans-serif" font-weight="900" font-size="24" text-anchor="middle" fill="#fff">
+    <rect x="232" y="452" width="40" height="40" rx="7" fill="#8E5CF7"/><text x="252" y="481">A</text>
+    <rect x="280" y="452" width="40" height="40" rx="7" fill="#2BA8E0"/><text x="300" y="481">B</text>
+    <rect x="328" y="452" width="40" height="40" rx="7" fill="#E63E6D"/><text x="348" y="481">C</text>  </g>
+
+  <!-- Estrellitas -->
+  <g fill="#FF8A3D">
+    <path d="M210 150 l4 9 10 1 -8 6 3 10 -9 -5 -9 5 3 -10 -8 -6 10 -1z"/>
+    <path d="M560 260 l3 7 8 1 -6 5 2 8 -7 -4 -7 4 2 -8 -6 -5 8 -1z" fill="#8E5CF7"/>
+    <path d="M40 330 l3 7 8 1 -6 5 2 8 -7 -4 -7 4 2 -8 -6 -5 8 -1z" fill="#2BA8E0"/>
+  </g>
+</svg>

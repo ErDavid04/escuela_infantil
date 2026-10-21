@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Condiciones</title>
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .policy-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .policy-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-top: 6rem;
+        }
+
+        .policy-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .policy-section h2 {
+            color: var(--primary-pink);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .policy-section h3 {
+            color: var(--gray-700);
+            margin: 1.5rem 0 0.5rem 0;
+            font-size: 1.2rem;
+        }
+
+        .policy-section ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .policy-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--gradient-pink);
+            color: white;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .highlight-box {
+            background: var(--light-pink);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--primary-pink);
+        }
+
+        .terms-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .floating-doc {
+            position: absolute;
+            font-size: 2rem;
+            color: rgba(107, 114, 128, 0.1);
+            animation: floatTerms 18s infinite linear;
+            pointer-events: none;
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+        }
+
+        .floating-doc:nth-child(1) {
+            top: 12%;
+            left: 6%;
+            animation-delay: 0s;
+            font-size: 1.9rem;
+            color: rgba(107, 114, 128, 0.08);
+        }
+
+        .floating-doc:nth-child(2) {
+            top: 22%;
+            right: 9%;
+            animation-delay: 2.5s;
+            font-size: 2.4rem;
+            color: rgba(75, 85, 99, 0.12);
+        }
+
+        .floating-doc:nth-child(3) {
+            bottom: 18%;
+            left: 11%;
+            animation-delay: 5s;
+            font-size: 2.1rem;
+            color: rgba(107, 114, 128, 0.09);
+        }
+
+        .floating-doc:nth-child(4) {
+            top: 42%;
+            right: 15%;
+            animation-delay: 7.5s;
+            font-size: 2.7rem;
+            color: rgba(75, 85, 99, 0.15);
+        }
+
+        .floating-doc:nth-child(5) {
+            bottom: 28%;
+            right: 7%;
+            animation-delay: 10s;
+            font-size: 1.8rem;
+            color: rgba(107, 114, 128, 0.11);
+        }
+
+        .floating-doc:nth-child(6) {
+            top: 62%;
+            left: 9%;
+            animation-delay: 12.5s;
+            font-size: 2.2rem;
+            color: rgba(75, 85, 99, 0.13);
+        }
+
+        .floating-doc:nth-child(7) {
+            bottom: 45%;
+            right: 22%;
+            animation-delay: 15s;
+            font-size: 1.6rem;
+            color: rgba(107, 114, 128, 0.07);
+        }
+
+        /* Iconos de documentos y legal */
+        .floating-doc:nth-child(1)::before {
+            content: '\f15c';
+        }
+
+        /* Documento */
+        .floating-doc:nth-child(2)::before {
+            content: '\f0f6';
+        }
+
+        /* Página */
+        .floating-doc:nth-child(3)::before {
+            content: '\f573';
+        }
+
+        /* Contrato */
+        .floating-doc:nth-child(4)::before {
+            content: '\f24e';
+        }
+
+        /* Balance */
+        .floating-doc:nth-child(5)::before {
+            content: '\f560';
+        }
+
+        /* Ley */
+        .floating-doc:nth-child(6)::before {
+            content: '\f5dc';
+        }
+
+        /* Check legal */
+        .floating-doc:nth-child(7)::before {
+            content: '\f328';
+        }
+
+        /* Firma */
+
+        @keyframes floatTerms {
+            0% {
+                transform: translateX(0px) translateY(0px) rotate(0deg);
+            }
+
+            25% {
+                transform: translateX(10px) translateY(-12px) rotate(5deg);
+            }
+
+            50% {
+                transform: translateX(0px) translateY(0px) rotate(0deg);
+            }
+
+            75% {
+                transform: translateX(-10px) translateY(12px) rotate(-5deg);
+            }
+
+            100% {
+                transform: translateX(0px) translateY(0px) rotate(0deg);
+            }
+        }
+
+        .policy-content {
+            position: relative;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(2px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="terms-background">
+        <div class="floating-doc"></div>
+        <div class="floating-doc"></div>
+        <div class="floating-doc"></div>
+        <div class="floating-doc"></div>
+        <div class="floating-doc"></div>
+        <div class="floating-doc"></div>
+        <div class="floating-doc"></div>
+    </div>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="Mi Pequeño Ángel - El Molinillo, ir al inicio">
+                <span class="logo-img">
+                    <img src="img/logo.jpg" alt="Logo Escuela Infantil Mi Pequeño Ángel - El Molinillo">
+                </span>
+                <div class="logo-text">
+                    <h1>Mi Pequeño Ángel</h1>
+                    <p>El Molinillo</p>
+                </div>
+            </a>
+
+            <!-- Menú de navegación -->
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="index.html#welcome" class="nav-link">Bienvenida</a>
+                <a href="index.html#about" class="nav-link">Sobre Nosotros</a>
+                <a href="index.html#facilities" class="nav-link">Instalaciones</a>
+                <a href="index.html#admissions" class="nav-link">Admisiones</a>
+                <a href="index.html#news" class="nav-link">Eventos</a>
+                <a href="index.html#contact" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido de Términos y Condiciones -->
+    <main class="policy-content">
+        <div class="policy-header">
+            <h1>Términos y Condiciones</h1>
+            <p>Última actualización: 15 de Enero, 2024</p>
+        </div>
+
+        <div class="highlight-box">
+            <p><strong>Importante:</strong> Al utilizar nuestros servicios, usted acepta estos términos y condiciones.
+                Léalos detenidamente antes de proceder con cualquier matriculación o uso de nuestros servicios.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>1. Aceptación de los Términos</h2>
+            <p>Al acceder y utilizar los servicios de la Escuela Infantil Mi Pequeño Ángel - El Molinillo, usted acepta
+                estar sujeto a estos términos y condiciones, todas las leyes y regulaciones aplicables, y acepta que es
+                responsable del cumplimiento de las leyes locales aplicables.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>2. Servicios Educativos</h2>
+
+            <h3>2.1. Matriculación</h3>
+            <p>La matriculación está sujeta a disponibilidad de plazas y cumplimiento de los requisitos de edad
+                establecidos por la legislación educativa vigente.</p>
+
+            <h3>2.2. Horarios y Calendario</h3>
+            <p>Nos regimos por el calendario escolar oficial establecido por la Consejería de Educación. Los horarios
+                pueden variar según las necesidades organizativas del centro.</p>
+
+            <h3>2.3. Proyecto Educativo</h3>
+            <p>Nuestro proyecto educativo se basa en los principios de educación infantil establecidos en la legislación
+                vigente, adaptado a las necesidades específicas de cada niño.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>3. Obligaciones de los Padres/Tutores</h2>
+            <ul>
+                <li>Proporcionar información veraz y completa durante el proceso de matriculación</li>
+                <li>Comunicar cualquier cambio en los datos de contacto</li>
+                <li>Informar sobre condiciones médicas, alergias o necesidades especiales del niño</li>
+                <li>Cumplir con los horarios de entrada y recogida establecidos</li>
+                <li>Abonar las cuotas mensuales en las fechas establecidas</li>
+                <li>Participar en las reuniones y actividades programadas</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>4. Tarifas y Pagos</h2>
+
+            <h3>4.1. Estructura de Pagos</h3>
+            <p>Las tarifas incluyen:</p>
+            <ul>
+                <li>Matrícula anual (no reembolsable)</li>
+                <li>Cuota mensual de escolaridad</li>
+                <li>Servicio de comedor (opcional)</li>
+                <li>Actividades extraescolares (opcionales)</li>
+            </ul>
+
+            <h3>4.2. Forma de Pago</h3>
+            <p>Los pagos se realizarán mediante domiciliación bancaria durante los primeros 5 días hábiles de cada mes.
+            </p>
+
+            <h3>4.3. Morosidad</h3>
+            <p>El impago de dos mensualidades consecutivas dará lugar a la suspensión del servicio hasta regularizar la
+                situación.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>5. Política de Cancelación</h2>
+
+            <h3>5.1. Baja Voluntaria</h3>
+            <p>Para dar de baja a un alumno, se debe notificar por escrito con al menos 30 días de antelación.</p>
+
+            <h3>5.2. Reembolsos</h3>
+            <p>La matrícula y cuotas abonadas no son reembolsables, excepto en casos de fuerza mayor debidamente
+                justificados.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>6. Salud y Seguridad</h2>
+
+            <h3>6.1. Protocolos Sanitarios</h3>
+            <p>Contamos con protocolos establecidos para:</p>
+            <ul>
+                <li>Administración de medicamentos</li>
+                <li>Gestión de alergias alimentarias</li>
+                <li>Actuación en caso de enfermedad o accidente</li>
+                <li>Prevención de contagios</li>
+            </ul>
+
+            <h3>6.2. Autorizaciones</h3>
+            <p>Los padres/tutores deben firmar las autorizaciones necesarias para:</p>
+            <ul>
+                <li>Salidas educativas</li>
+                <li>Tratamiento de datos de imagen</li>
+                <li>Atención médica de urgencia</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>7. Propiedad Intelectual</h2>
+            <p>Todo el contenido del sitio web, incluyendo pero no limitado a texto, gráficos, logotipos, y software, es
+                propiedad de la Escuela Infantil Mi Pequeño Ángel - El Molinillo y está protegido por las leyes de
+                propiedad intelectual.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>8. Limitación de Responsabilidad</h2>
+            <p>La escuela no será responsable por:</p>
+            <ul>
+                <li>Daños o perjuicios indirectos o consecuentes</li>
+                <li>Pérdidas resultantes de circunstancias fuera de nuestro control razonable</li>
+                <li>Incidentes derivados del incumplimiento de las obligaciones por parte de los padres/tutores</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>9. Modificaciones de los Términos</h2>
+            <p>Nos reservamos el derecho de modificar estos términos en cualquier momento. Las modificaciones entrarán
+                en vigor inmediatamente después de su publicación en el sitio web.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>10. Ley Aplicable y Jurisdicción</h2>
+            <p>Estos términos se rigen por las leyes españolas. Cualquier disputa será resuelta en los tribunales de
+                Huelva.</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>11. Contacto</h2>
+            <p>Para cualquier consulta sobre estos términos y condiciones:</p>
+            <ul>
+                <li>Email: contacto@escuelainfantilmpaelmolinillo.es</li>
+                <li>Teléfono: +34 959 240 545</li>
+                <li>Dirección: Calle Santiago Apóstol Nº22, 21002, Huelva</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <img src="img/favicon.ico" alt="Logo Escuela Infantil Mi Pequeño Ángel"
+                                style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <div>
+                            <h3>Mi Pequeño Ángel</h3>
+                            <p>El Molinillo</p>
+                        </div>
+                    </div>
+                    <p class="footer-text">Escuela infantil comprometida con la educación de calidad, la seguridad y el
+                        bienestar de los más pequeños en Huelva.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/p/Mi-Peque%C3%B1o-%C3%81ngel-El-Molinillo-100089891724170/"
+                            class="social-link" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Calle Santiago Apóstol Nº22</p>
+                        <p>21002, Huelva</p>
+                        <p><i class="fas fa-phone"></i> +34 959 240 545</p>
+                        <p><i class="fas fa-phone"></i> +34 646 665 401</p>
+                        <p><i class="fas fa-envelope"></i> contacto@escuelainfantilmpaelmolinillo.es</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Horario</h4>
+                    <div class="footer-hours">
+                        <p>Lunes a Viernes de 7:30h - 17:00h</p>
+                        <p>Sábados, Domingos y Festivos: Cerrado</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Políticas en el pie de página -->
+            <div class="footer-policies">
+                <a href="politica-privacidad.html">Política de Privacidad</a> |
+                <a href="politica-cookies.html">Política de Cookies</a> |
+                <a href="terminos-condiciones.html">Términos y Condiciones</a> |
+                <a href="aviso-legal.html">Aviso Legal</a>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 Mi Pequeño Ángel - El Molinillo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Banner de Cookies -->
+    <div id="cookieBanner" class="cookie-banner-full">
+        <div class="container">
+            <div class="cookie-content-full">
+                <div class="cookie-text-full">
+                    <h3><i class="fas fa-cookie-bite"></i> Usamos cookies para mejorar tu experiencia</h3>
+                    <p>En nuestra escuela infantil utilizamos cookies propias y de terceros para analizar el tráfico
+                        web, personalizar contenidos y ofrecerte una mejor experiencia. Puedes aceptar todas las cookies
+                        o configurar tus preferencias.</p>
+                </div>
+                <div class="cookie-buttons-full">
+                    <button id="acceptAllCookies" class="btn-cookie btn-cookie-primary">
+                        Aceptar Todas
+                    </button>
+                    <button id="configureCookies" class="btn-cookie btn-cookie-secondary">
+                        Configurar
+                    </button>
+                    <button id="rejectCookies" class="btn-cookie btn-cookie-outline">
+                        Rechazar No Esenciales
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Configuración de Cookies -->
+    <div id="cookieModal" class="cookie-modal">
+        <div class="cookie-modal-content">
+            <div class="cookie-modal-header">
+                <h3><i class="fas fa-sliders-h"></i> Configuración de Cookies</h3>
+                <button id="closeCookieModal" class="cookie-close">&times;</button>
+            </div>
+            <div class="cookie-modal-body">
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <label class="cookie-toggle">
+                            <input type="checkbox" id="essentialCookies" checked disabled>
+                            <span class="cookie-slider"></span>
+                        </label>
+                        <div class="cookie-category-info">
+                            <h4>Cookies Esenciales</h4>
+                            <p>Necesarias para el funcionamiento básico del sitio. No se pueden desactivar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <label class="cookie-toggle">
+                            <input type="checkbox" id="performanceCookies">
+                            <span class="cookie-slider"></span>
+                        </label>
+                        <div class="cookie-category-info">
+                            <h4>Cookies de Rendimiento</h4>
+                            <p>Nos ayudan a entender cómo interactúas con el sitio y mejorar nuestros servicios.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <label class="cookie-toggle">
+                            <input type="checkbox" id="functionalityCookies">
+                            <span class="cookie-slider"></span>
+                        </label>
+                        <div class="cookie-category-info">
+                            <h4>Cookies de Funcionalidad</h4>
+                            <p>Permiten recordar tus preferencias y personalizar tu experiencia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cookie-category">
+                    <div class="cookie-category-header">
+                        <label class="cookie-toggle">
+                            <input type="checkbox" id="marketingCookies">
+                            <span class="cookie-slider"></span>
+                        </label>
+                        <div class="cookie-category-info">
+                            <h4>Cookies de Marketing</h4>
+                            <p>Utilizadas para mostrarte contenido y anuncios relevantes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cookie-modal-footer">
+                <button id="saveCookiePreferences" class="btn-cookie btn-cookie-primary">
+                    Guardar Preferencias
+                </button>
+                <button id="acceptAllInModal" class="btn-cookie btn-cookie-secondary">
+                    Aceptar Todas
+                </button>
+                <button id="rejectAllInModal" class="btn-cookie btn-cookie-outline">
+                    Rechazar Todas
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
