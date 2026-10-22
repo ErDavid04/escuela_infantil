@@ -4,14 +4,123 @@
       <stop offset="0" stop-color="#D6EEFB"/>
       <stop offset="1" stop-color="#FFF3C4"/>
     </linearGradient>
-    <g id="persona">
-      <path d="M-11 -128 L11 -128 L12 -114 L56 -110 L56 -94 L13 -96 L13 -60 L42 0 L22 0 L0 -40 L-22 0 L-42 0 L-13 -60 L-13 -96 L-56 -94 L-56 -110 L-12 -114 Z"/>
-      <circle cy="-150" r="24"/>
-      <circle cx="-8" cy="-153" r="3" fill="#26354F"/>
-      <circle cx="8" cy="-153" r="3" fill="#26354F"/>
-      <path d="M-8 -142 Q0 -134 8 -142" stroke="#26354F" stroke-width="3" fill="none" stroke-linecap="round"/>
-      <circle cx="-15" cy="-144" r="4" fill="#FF8FB1" opacity=".7"/>
-      <circle cx="15" cy="-144" r="4" fill="#FF8FB1" opacity=".7"/>
+    <!-- Cara (centrada en 0,-140) -->
+    <g id="cara">
+      <path d="M-16 -151 Q-11 -154.5 -6 -151 M6 -151 Q11 -154.5 16 -151" stroke="#26354F" stroke-opacity=".55" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+      <ellipse cx="-11" cy="-140" rx="4.6" ry="6" fill="#26354F"/>
+      <ellipse cx="11" cy="-140" rx="4.6" ry="6" fill="#26354F"/>
+      <circle cx="-9.4" cy="-142.6" r="1.9" fill="#fff"/>
+      <circle cx="12.6" cy="-142.6" r="1.9" fill="#fff"/>
+      <path d="M-2.5 -131 Q0 -128.5 2.5 -131" stroke="#000" stroke-opacity=".18" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M-8 -124 Q0 -112 8 -124 Q0 -121 -8 -124 Z" fill="#9E2B3E"/>
+      <path d="M-4.5 -119.6 Q0 -115.8 4.5 -119.6 Q0 -121.2 -4.5 -119.6 Z" fill="#F07A8C"/>
+      <ellipse cx="-20" cy="-128" rx="5.5" ry="3.5" fill="#FF6F91" opacity=".45"/>
+      <ellipse cx="20" cy="-128" rx="5.5" ry="3.5" fill="#FF6F91" opacity=".45"/>
+    </g>
+    <!-- Padre: jersey azul, da la mano al peque (mano en 62,-95) -->
+    <g id="padre">
+      <path d="M-19 -100 H19 L17 -8 H3 L0 -80 L-3 -8 H-17 Z" fill="#26354F"/>
+      <path d="M-20 -9 H-2 V-3 Q-2 0 -5 0 H-25 Q-29 -6 -20 -9 Z" fill="#FF8A3D"/>
+      <path d="M2 -9 H20 Q29 -6 25 0 H5 Q2 0 2 -3 Z" fill="#FF8A3D"/>
+      <rect x="-7" y="-186" width="14" height="16" rx="4" fill="#D18B5E"/>
+      <path d="M-24 -170 Q0 -178 24 -170 Q30 -140 26 -96 H-26 Q-30 -140 -24 -170 Z" fill="#2BA8E0"/>
+      <path d="M8 -175 Q18 -174 24 -170 Q30 -140 26 -96 H14 Q20 -140 8 -175 Z" fill="#1E8FC4"/>
+      <path d="M-26 -102 H26" stroke="#1E8FC4" stroke-width="6"/>
+      <path d="M-10 -175 Q0 -166 10 -175" stroke="#1E8FC4" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M-22 -166 Q-34 -134 -32 -106" stroke="#2BA8E0" stroke-width="13" stroke-linecap="round" fill="none"/>
+      <circle cx="-32" cy="-100" r="7" fill="#E8A87C"/>
+      <path d="M22 -166 Q40 -140 56 -102" stroke="#1E8FC4" stroke-width="13" stroke-linecap="round" fill="none"/>
+      <circle cx="62" cy="-96" r="7" fill="#E8A87C"/>
+      <circle cx="-24" cy="-198" r="5" fill="#D18B5E"/>
+      <circle cx="24" cy="-198" r="5" fill="#D18B5E"/>
+      <ellipse cx="0" cy="-200" rx="25" ry="27" fill="#E8A87C"/>
+      <use href="#cara" transform="translate(0 -88) scale(.8)"/>
+      <path d="M-26 -200 Q-29 -234 0 -233 Q29 -234 26 -202 Q22 -217 8 -219 Q-6 -213 -18 -219 Q-24 -212 -26 -200 Z" fill="#2B2233"/>
+      <path d="M-14 -226 Q-2 -230 10 -228" stroke="#4A3F57" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </g>
+    <!-- Educadora: jersey morado, saluda con la mano y da la otra al peque (mano en -62,-95) -->
+    <g id="educadora">
+      <path d="M-28 -200 C-36 -248 36 -248 28 -200 C30 -182 40 -170 33 -158 C24 -154 18 -166 18 -176 L-18 -176 C-18 -166 -24 -154 -33 -158 C-40 -170 -30 -182 -28 -200 Z" fill="#6B3E26"/>
+      <path d="M-19 -100 H19 L17 -8 H3 L0 -80 L-3 -8 H-17 Z" fill="#3E5F8A"/>
+      <path d="M-20 -9 H-2 V-3 Q-2 0 -5 0 H-25 Q-29 -6 -20 -9 Z" fill="#E63E6D"/>
+      <path d="M2 -9 H20 Q29 -6 25 0 H5 Q2 0 2 -3 Z" fill="#E63E6D"/>
+      <rect x="-7" y="-186" width="14" height="16" rx="4" fill="#F2B897"/>
+      <path d="M-24 -170 Q0 -178 24 -170 Q30 -140 26 -96 H-26 Q-30 -140 -24 -170 Z" fill="#8E5CF7"/>
+      <path d="M8 -175 Q18 -174 24 -170 Q30 -140 26 -96 H14 Q20 -140 8 -175 Z" fill="#7647E0"/>
+      <path d="M-10 -175 L0 -160 L10 -175 Z" fill="#F2B897"/>
+      <path d="M12 -146 c-3 -5 -10 -2 -7 3 l7 6 l7 -6 c3 -5 -4 -8 -7 -3z" fill="#FFC93C"/>
+      <path d="M-22 -166 Q-40 -140 -56 -102" stroke="#8E5CF7" stroke-width="13" stroke-linecap="round" fill="none"/>
+      <circle cx="-62" cy="-96" r="7" fill="#FFD9BF"/>
+      <path d="M22 -166 Q46 -178 50 -216" stroke="#7647E0" stroke-width="13" stroke-linecap="round" fill="none"/>
+      <ellipse cx="51" cy="-226" rx="7.5" ry="9" fill="#FFD9BF"/>
+      <path d="M44 -224 L40 -230" stroke="#FFD9BF" stroke-width="4.5" stroke-linecap="round"/>
+      <circle cx="-24" cy="-198" r="5" fill="#F2B897"/>
+      <circle cx="24" cy="-198" r="5" fill="#F2B897"/>
+      <ellipse cx="0" cy="-200" rx="25" ry="27" fill="#FFD9BF"/>
+      <use href="#cara" transform="translate(0 -88) scale(.8)"/>
+      <path d="M-27 -196 Q-31 -234 0 -233 Q31 -234 27 -196 Q25 -214 12 -221 Q0 -207 -16 -215 Q-22 -206 -27 -196 Z" fill="#6B3E26"/>
+      <path d="M-16 -226 Q-4 -230 8 -228" stroke="#8A5535" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <rect x="11" y="-224" width="11" height="5" rx="2.5" fill="#E63E6D" transform="rotate(-30 16.5 -221.5)"/>
+    </g>
+    <!-- Niño de pelo rizado: da la mano al padre (mano en -62,-105) -->
+    <g id="nino-rizos">
+      <path d="M-21 -62 H21 L19 -11 H3 L0 -44 L-3 -11 H-19 Z" fill="#26354F"/>
+      <path d="M-22 -11 H-2 V-3 Q-2 0 -5 0 H-24 Q-29 -6 -22 -11 Z" fill="#FFC93C"/>
+      <path d="M2 -11 H22 Q29 -6 24 0 H5 Q2 0 2 -3 Z" fill="#FFC93C"/>
+      <path d="M-26 -1.5 H-2 M2 -1.5 H26" stroke="#fff" stroke-width="2.5"/>
+      <rect x="-6" y="-115" width="12" height="12" rx="3" fill="#8C5536"/>
+      <path d="M-19 -104 Q0 -110 19 -104 L22 -58 Q0 -54 -22 -58 Z" fill="#22A886"/>
+      <path d="M7 -107.5 Q14 -106 19 -104 L22 -58 Q17 -57 12 -56 Z" fill="#1B8C70"/>
+      <path d="M-21 -84 H21 M-21.6 -74 H21.6" stroke="#fff" stroke-width="4" opacity=".85"/>
+      <path d="M24 -88 L28 -66" stroke="#A86B47" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="28" cy="-63" r="6" fill="#A86B47"/>
+      <path d="M17 -101 L24 -90" stroke="#1B8C70" stroke-width="13" stroke-linecap="round"/>
+      <path d="M-28 -103 L-57 -105" stroke="#A86B47" stroke-width="9" stroke-linecap="round"/>
+      <path d="M-17 -101 L-28 -103" stroke="#22A886" stroke-width="13" stroke-linecap="round"/>
+      <circle cx="-62" cy="-105" r="6.5" fill="#A86B47"/>
+      <g fill="#2B2233">
+        <circle cx="-30" cy="-150" r="12"/><circle cx="30" cy="-150" r="12"/>
+        <circle cx="-22" cy="-170" r="14"/><circle cx="0" cy="-178" r="15"/><circle cx="22" cy="-170" r="14"/>
+      </g>
+      <circle cx="-30" cy="-136" r="6" fill="#8C5536"/>
+      <circle cx="30" cy="-136" r="6" fill="#8C5536"/>
+      <ellipse cx="0" cy="-140" rx="31" ry="30" fill="#A86B47"/>
+      <use href="#cara"/>
+      <g fill="#2B2233">
+        <circle cx="-23" cy="-161" r="9"/><circle cx="-8" cy="-166" r="10"/><circle cx="8" cy="-166" r="10"/><circle cx="23" cy="-161" r="9"/>
+      </g>
+      <g fill="#4A3F57"><circle cx="-6" cy="-180" r="3"/><circle cx="14" cy="-176" r="2.5"/><circle cx="-22" cy="-172" r="2.5"/></g>
+    </g>
+    <!-- Niña rubia con lazo: sujeta el molinillo (-49,-122) y da la mano a la educadora (62,-105) -->
+    <g id="nina-rubia">
+      <path d="M-34 -140 Q-38 -186 0 -186 Q38 -186 34 -140 L36 -118 Q30 -112 24 -118 H-24 Q-30 -112 -36 -118 Z" fill="#F6C445"/>
+      <path d="M-8 -48 V-12 M8 -48 V-12" stroke="#FFD9BF" stroke-width="10" stroke-linecap="round"/>
+      <path d="M-8 -18 V-10 M8 -18 V-10" stroke="#fff" stroke-width="10"/>
+      <path d="M-20 -11 H-2 V-3 Q-2 0 -5 0 H-22 Q-27 -6 -20 -11 Z" fill="#8E5CF7"/>
+      <path d="M2 -11 H20 Q27 -6 22 0 H5 Q2 0 2 -3 Z" fill="#8E5CF7"/>
+      <rect x="-6" y="-115" width="12" height="12" rx="3" fill="#F2B897"/>
+      <path d="M-17 -104 Q0 -110 17 -104 L30 -44 Q0 -36 -30 -44 Z" fill="#FF8A3D"/>
+      <path d="M6 -107.5 Q12 -106 17 -104 L30 -44 Q24 -42 18 -41 Z" fill="#E8702A"/>
+      <path d="M-29 -49 Q0 -41 29 -49" stroke="#fff" stroke-width="4" fill="none"/>
+      <path d="M-10 -107 Q0 -96 10 -107 Q0 -102 -10 -107 Z" fill="#fff"/>
+      <path d="M-8 -72 c-3 -5 -10 -2 -7 3 l7 6 l7 -6 c3 -5 -4 -8 -7 -3z" fill="#E63E6D"/>
+      <path d="M24 -101 L57 -105" stroke="#FFD9BF" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="19" cy="-99" r="7.5" fill="#E8702A"/>
+      <circle cx="62" cy="-105" r="6.5" fill="#FFD9BF"/>
+      <path d="M-24 -101 Q-42 -104 -47 -117" stroke="#FFD9BF" stroke-width="9" stroke-linecap="round" fill="none"/>
+      <circle cx="-19" cy="-99" r="7.5" fill="#FF8A3D"/>
+      <circle cx="-49" cy="-122" r="6.5" fill="#FFD9BF"/>
+      <circle cx="-30" cy="-138" r="6" fill="#F2B897"/>
+      <circle cx="30" cy="-138" r="6" fill="#F2B897"/>
+      <ellipse cx="0" cy="-140" rx="31" ry="30" fill="#FFD9BF"/>
+      <use href="#cara"/>
+      <path d="M-15.5 -144 L-18.5 -147 M15.5 -144 L18.5 -147" stroke="#26354F" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M-32 -140 Q-34 -181 0 -181 Q34 -181 32 -142 Q30 -158 20 -162 L18 -155 Q8 -158 6 -165 Q-4 -156 -15 -161 Q-23 -152 -32 -140 Z" fill="#F6C445"/>
+      <path d="M-18 -172 Q-6 -178 8 -176" stroke="#FFE08A" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <g transform="translate(22 -174) rotate(20)">
+        <path d="M0 0 L-12 -8 L-12 8 Z M0 0 L12 -8 L12 8 Z" fill="#E63E6D" stroke="#E63E6D" stroke-width="3" stroke-linejoin="round"/>
+        <circle r="3.5" fill="#C42D58"/>
+      </g>
     </g>
     <g id="flor">
       <circle cx="0" cy="-9" r="7"/><circle cx="9" cy="0" r="7"/><circle cx="0" cy="9" r="7"/><circle cx="-9" cy="0" r="7"/>
@@ -79,14 +188,14 @@
   </g>
 
   <!-- Familia que llega (izquierda) -->
-  <line x1="181" y1="368" x2="176" y2="404" stroke="#2BA8E0" stroke-width="16" stroke-linecap="round"/>
-  <g transform="translate(110 505) scale(1.3)" fill="#2BA8E0"><use href="#persona"/></g>
-  <g transform="translate(228 505) scale(.9)" fill="#22A886"><use href="#persona"/></g>
+  <g fill="#26354F" opacity=".15">
+    <ellipse cx="110" cy="505" rx="38" ry="6"/><ellipse cx="228" cy="505" rx="28" ry="5"/>
+    <ellipse cx="690" cy="505" rx="38" ry="6"/><ellipse cx="572" cy="505" rx="28" ry="5"/>
+  </g>
+  <g transform="translate(228 505) scale(.9)"><use href="#nino-rizos"/></g>
+  <g transform="translate(110 505)"><use href="#padre"/></g>
 
   <!-- Educadora y peque (derecha) -->
-  <line x1="619" y1="368" x2="624" y2="404" stroke="#8E5CF7" stroke-width="16" stroke-linecap="round"/>
-  <g transform="translate(690 505) scale(1.3)" fill="#8E5CF7"><use href="#persona"/></g>
-  <g transform="translate(572 505) scale(.9)" fill="#FFB300"><use href="#persona"/></g>
   <!-- molinillo del peque -->
   <g transform="translate(528 330)">
     <line x1="0" y1="0" x2="0" y2="80" stroke="#26354F" stroke-width="4" stroke-linecap="round"/>
@@ -97,13 +206,15 @@
     <circle r="4" fill="#fff"/>
   </g>
 
-  <!-- Globos -->
+  <!-- Globos (detrás de la educadora) -->
   <g>
     <path d="M760 400 Q752 340 762 300" stroke="#26354F" stroke-width="2" fill="none"/>
     <ellipse cx="762" cy="280" rx="20" ry="25" fill="#E63E6D"/>
     <path d="M740 400 Q735 360 730 330" stroke="#26354F" stroke-width="2" fill="none"/>
     <ellipse cx="730" cy="310" rx="18" ry="23" fill="#FFC93C"/>
   </g>
+  <g transform="translate(572 505) scale(.9)"><use href="#nina-rubia"/></g>
+  <g transform="translate(690 505)"><use href="#educadora"/></g>
 
   <!-- Flores -->
   <use href="#flor" x="60" y="560" fill="#E63E6D"/>

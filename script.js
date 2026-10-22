@@ -39,7 +39,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
             window.scrollTo({
-                top: target.offsetTop - 80,
+                top: target.offsetTop - document.querySelector('header').offsetHeight,
                 behavior: 'smooth'
             });
             // Close mobile menu if open
