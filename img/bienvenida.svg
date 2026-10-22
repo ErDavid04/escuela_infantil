@@ -175,9 +175,6 @@
     <rect x="308" y="322" width="44" height="40" rx="6" fill="#2BA8E0"/>
     <rect x="448" y="322" width="44" height="40" rx="6" fill="#2BA8E0"/>
     <path d="M330 322 V362 M308 342 H352 M470 322 V362 M448 342 H492" stroke="#fff" stroke-width="3"/>
-    <!-- cartel -->
-    <rect x="345" y="318" width="110" height="32" rx="16" fill="#FFC93C"/>
-    <text x="400" y="341" text-anchor="middle" font-family="'Arial Rounded MT Bold', 'Arial Black', sans-serif" font-weight="900" font-size="18" fill="#26354F">¡Hola!</text>
     <!-- puerta abierta -->
     <path d="M365 500 V405 A35 35 0 0 1 435 405 V500 Z" fill="#FFE9A8"/>
     <path d="M365 500 V405 A35 35 0 0 1 435 405 V500 Z" fill="none" stroke="#FF8A3D" stroke-width="6"/>
